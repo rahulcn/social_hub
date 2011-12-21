@@ -1,3 +1,27 @@
-# Ruby on Rails Tutorial: example application
+A simple Social Network application called SOCIAL HUB
+                                              -----> by Rahul Chandra
 
-This is the example application for [*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/) by [Michael Hartl](http://michaelhartl.com/).
+
+Installation
+
+Download the Repository:
+
+go to SocialHub: cd social_hub
+
+and run:
+
+bundle install
+
+Then: craete database
+
+rake db:create
+
+Do not forget to migrate your database
+
+rake db:migrate
+
+OPTIONAL: one last step
+
+rake db:populate (to seed the database using faker gem)
+
+HOPE U LIKE IT USE IT ENJOY IT...
