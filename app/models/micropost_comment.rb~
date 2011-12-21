@@ -1,0 +1,2 @@
+class MicropostComment < ActiveRecord::Base
+end

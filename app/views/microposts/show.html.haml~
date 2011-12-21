@@ -1,0 +1,10 @@
+-for section in @micropost.sections
+
+%ol.comments
+  %h3 Comments
+  - for comment in @micropost.comments
+    %li
+      .comment= comment.comment
+
+- if user_signed_in?
+  = render 'comments/form'

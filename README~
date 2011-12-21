@@ -1,0 +1,27 @@
+A simple Social Network application called SOCIAL HUB
+
+
+
+Installation
+
+Download the Repository:
+
+go to SocialHub: cd social_hub
+
+and run:
+
+bundle install
+
+Then: craete database
+
+rake db:create
+
+Do not forget to migrate your database
+
+rake db:migrate
+
+OPTIONAL: one last step
+
+rake db:populate (to seed the database using faker gem)
+
+HOPE U LIKE IT USE IT ENJOY IT...

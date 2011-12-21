@@ -1,0 +1,62 @@
+class MicropostCommentsController < ApplicationController
+  before_filter :require_user
+  # GET /micropost_comments/1
+  # GET /micropost_comments/1.xml
+  def show
+    @micropost_comment = MicropostComment.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml { render :xml => @micropost_comment }
+    end
+  end
+
+  # GET /micropost_comments/1/edit
+  def edit
+    @micropost_comment = MicropostComment.find(params[:id])
+  end
+
+  # POST /micropost_comments
+  # POST /micropost_comments.xml
+  def create
+    @micropost_comment = MicropostComment.new(params[:micropost_comment])
+
+    respond_to do |format|
+      if @micropost_comment.save
+        format.html { redirect_to(root_url, :notice => Variable.display('notice_micropost_comment')) }
+        format.xml { render :xml => root_url, :status => :created, :location => @micropost_comment }
+      else
+        format.html { render :action => "new" }
+        format.xml { render :xml => @micropost_comment.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /micropost_comments/1
+  # PUT /micropost_comments/1.xml
+  def update
+    @micropost_comment = MicropostComment.find(params[:id])
+
+    respond_to do |format|
+      if @micropost_comment.update_attributes(params[:micropost_comment])
+        format.html { redirect_to(root_url, :notice => Variable.display('notice_update_comment')) }
+        format.xml { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml { render :xml => @micropost_comment.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /micropost_comments/1
+  # DELETE /micropost_comments/1.xml
+  def destroy
+    @micropost_comment = MicropostComment.find(params[:id])
+    @micropost_comment.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(root_url) }
+      format.xml { head :ok }
+    end
+  end
+end

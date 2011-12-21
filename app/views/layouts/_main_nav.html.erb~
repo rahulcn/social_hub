@@ -1,0 +1,34 @@
+
+
+<ul id="navigationMenu">
+  <li>
+    <a class="home" href="/">
+    <span>Home</span>
+    </a>
+  </li>
+
+  <li>
+    <a class="about" href="#">
+    <span>About</span>
+    </a>
+  </li>
+
+  <li>
+    <a class="services" href="#">
+     <span>Services</span>
+  </li>
+
+  <li>
+    <a class="portfolio" href="#">
+    <span>Portfolio</span>
+    </a>
+  </li>
+
+  <li>
+    <a class="contact" href="#">
+    <span>Contact us</span>
+    </a>
+  </li>
+</ul>
+
+

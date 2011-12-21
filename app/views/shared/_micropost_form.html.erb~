@@ -1,0 +1,16 @@
+<%= form_for(@micropost) do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+    <%= f.text_area :content %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+  <% if current_user?(micropost.user) %>
+  <td>
+    <%= link_to "delete", micropost, :method => :delete,
+                                     :confirm => "You sure?",
+                                     :title => micropost.content %>
+  </td>
+  <% end %>
+<% end %>

@@ -1,0 +1,33 @@
+<table class="profile" summary="Profile Information">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+      <%= render 'follow_form' if signed_in? %>
+      <% if @user.microposts.any? %>
+        <table class="microposts" summary="User microposts">
+          <%= render @microposts %>
+
+        </table>
+        <h3>Comments</h3>
+        <div id="comments">
+           <%= render @micropost.comments %>
+        </div>
+
+        <%= link_to "new comment", new_micropost_comment_path(@micropost, 
+                                   :format => :js),
+                                   :remote => true, 
+                                   :id => 'new_comment_link' %>
+		
+      <% end %>
+    </td>
+    <td class="sidebar">
+      <strong>Name</strong> <%= @user.name %><br />
+      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+      <strong>Microposts</strong> <%= @user.microposts.count %>
+      <%= render 'shared/stats' %>
+    </td>
+  </tr>
+</table>

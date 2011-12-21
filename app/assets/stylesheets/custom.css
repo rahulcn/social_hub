@@ -1,0 +1,287 @@
+
+.container {
+  width: 700px;
+  float:left;
+}
+
+body {
+
+  font-size:14px;
+  color:#666;
+  background: white no-repeat;
+
+
+  /* CSS3 Radial Gradients */
+  background-image:-moz-radial-gradient(center -100px 45deg, circle farthest-corner, #444 150px, #111 300px);
+  background-image:-webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(#444), to(#111));
+
+  font-family:Comic Sans, Comic Sans MS, cursive, Arial, Helvetica, sans-serif;
+}
+
+header {
+    background:url(img/green.jpg) #666666;
+
+}
+
+header img {
+    background-color: white;
+    padding-top: 1em;
+}
+
+section {
+
+  background-color: white;
+  padding: 50px 20px;
+}
+
+section h1{
+  font-size: 200%;
+}
+
+a {
+
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+
+div#greenHead {
+  position:fixed;
+  width: 1267px;
+  background: #006600 url(img/green1.jpg) no-repeat;
+  height: 50px;
+}
+
+#greenHead nav {
+  /* The navigation menu bar: */
+  margin-top: 7px;
+
+
+        float: right;
+	padding:5px 10px;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a, ul li a:visited {
+  /* Styling the hyperlinks of the menu as buttons */
+
+	font-weight:bold;
+
+  background: #006600 url(img/blue_mid.png) repeat-x;
+	/*background:url(img/button_bg.jpg) repeat-x center bottom #666666;
+
+	 display:block allows for additinal CSS rules to take effect, such as paddings: */
+	display:block;
+	border:1px solid #4D4D4D;
+	color:#CCCCCC;
+	border-top-color:#565656;
+
+	padding:4px 6px;
+	margin:4px 5px;
+	height:16px;
+
+	/* Setting a CSS3 box shadow around the button */
+
+	-moz-box-shadow:0 0 1px black;
+	-webkit-box-shadow:0 0 1px black;
+	box-shadow:0 0 1px black;
+
+	/* CSS3 text shadow */
+	text-shadow:0 1px black;
+
+	/* CSS3 rounded corners for both the navigation bar and the buttons: */
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	border-radius:5px;
+}
+
+nav ul li a:hover{
+	/* On hover show the top, lighter, part of the background: */
+	background-position:center top;
+	text-decoration:none;
+}
+
+
+.round {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+  color: #fff;
+  background: #006400;
+  width: 190px;
+}
+
+footer {
+  text-align: center;
+  margin: 10px auto 0 auto;
+  display: block;
+  width: 720px;
+}
+
+footer nav {
+ float: none;
+}
+
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+
+
+td.sidebar {
+  width: 230px;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+  position:fixed;
+  height:auto;
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+
+div.field, div.action {
+  margin-bottom: 10px;
+}
+
+/* Erros messages */
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h1 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 15px;
+  margin: -7px;
+  background-color: #c00;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+ul.users {
+  margin-top: 1px;
+}
+
+ul.users li {
+  list-style: none;
+}
+
+
+/*  MICROPOSTS STYLING  */
+
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+}
+
+table.microposts tr {
+  height: 70px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.microposts {
+  font-size: 80%;
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
