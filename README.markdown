@@ -1,5 +1,5 @@
 A simple Social Network application called SOCIAL HUB
-                                              -----> by Rahul Chandra
+                                              > by Rahul Chandra
 
 
 Installation
